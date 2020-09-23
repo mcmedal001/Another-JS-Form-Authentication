@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: open-sans; */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h2 {
+    text-align: center;
+    padding: 15px 0;
+}
+
+fieldset {
+    border-width: 2px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border-color: #fffff0;
+}
+
+form input {
+    border: solid 1px rgba(20, 20, 20, 0.502);
+    margin: 6px 3px;
+    width: 320px;
+    padding: 6px 6px;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+form input:focus {
+    outline: 0;
+    border-color: #000000;
+    border-width: 1px;
+}
+
+form select {
+    margin: 6px 3px;
+    width: 320px;
+    padding: 6px 0px;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+form select:focus {
+    outline: 0;
+    border-color: #000000;
+    border-width: 1px;
+}
+
+.filedset-title {
+    padding: 5px 0px;
+    color: #000000;
+}
+
+button {
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #009999;
+    border: none;
+    margin: 10px 0px;
+    color: #fffff0;
+    font-size: 1.1em;
+    border-radius: 5px;
+}
+
+.form-control {
+    position: relative;
+    margin-bottom: 5px;
+  }
+
+.form-control p {
+    color: red;
+    font-size: small;
+    visibility: hidden;
+}
+
+.form-control.error p {
+    visibility: visible;
+    margin-left: 4px;
+}
+
+.form-control.success input {
+    border-color: #008000;
+    border-width: 2px;
+}
+
+.form-control.error input {
+    border-color: red;
+    border-width: 2px;
+}
